@@ -10,4 +10,4 @@ class PrometheusMetricStore(object):
         prometheus_query_url = "{}/api/v1/query".format(prometheus_url)
         resposnse = requests.get(prometheus_query_url, params=dict(query=metric_query))
         resposnse_json = resposnse.json()
-        return float(resposnse_json['data']['result'][1])
+        return float(resposnse_json['data']['result'][0]['value'][1])
