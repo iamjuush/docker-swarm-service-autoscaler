@@ -12,7 +12,7 @@ class PrometheusMetricStore(object):
         response = requests.get(prometheus_query_url, params=dict(query=metric_query))
         response_json = response.json()
         if len(response_json['data']['result']) != 0:
-            return float(response['data']['result'][0]['value'][1])
+            return float(response_json['data']['result'][0]['value'][1])
         else:
             return None
 

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/docker-swarm-service-autoscaler.iml" filepath="$PROJECT_DIR$/.idea/docker-swarm-service-autoscaler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/docker-swarm-service-autoscaler.iml" filepath="$PROJECT_DIR$/.idea/docker-swarm-service-autoscaler.iml" />
     </modules>
   </component>
 </project>
