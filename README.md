@@ -34,14 +34,14 @@ path to a directory containing TLS certificates to use when connecting to the Do
 ```
 # Ensure python 2.x and pip installed
 pip install -r app/requirements.txt
-python -m app.main example/autoscaler.yml --log-level debug
+python -m app.main example/ --log-level debug
 ```
 
 #### Using docker
 
 ```
-# Change example/autoscaler.yml as per your need
-docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/example/autoscaler.yml:/etc/docker-swarm-service-autoscaler/autoscaler.yml sahajsoft/docker-swarm-service-autoscaler /etc/docker-swarm-service-autoscaler/autoscaler.yml --log-level=DEBUG
+# Change example/ as per your need
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v ./docker/autoscaler.yml:/etc/docker-swarm-service-autoscaler/autoscaler.yml sahajsoft/docker-swarm-service-autoscaler /etc/docker-swarm-service-autoscaler/autoscaler.yml --log-level=DEBUG
 ```
 
 ### Running in docker swarm
